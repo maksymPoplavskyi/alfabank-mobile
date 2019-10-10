@@ -1,0 +1,52 @@
+// Hero ( slider + cash'u )
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 20px;
+    overflow-x: hidden;
+    background-color: #253580;
+
+    .hero-slider {
+        display: flex;
+        align-items: center;
+        overflow: auto;
+        margin-bottom: 20px;
+
+        .hero-slider-elem {
+            background-color: $color-white;
+            min-width: 145px;
+            max-width: 145px;
+            min-height: 120px;
+            padding: 15px 15px 0 10px;
+            border-radius: 10px;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+        &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: $color-white;
+            margin-bottom: 10px;
+        }
+
+        &__icon svg {
+            width: 30px;
+            height: 30px;
+            color: $color-white;
+        }
+
+        &__title {
+            font-size: 12px;
+            letter-spacing: .6px;
+            line-height: 1.4;
+        }
+    }
+}

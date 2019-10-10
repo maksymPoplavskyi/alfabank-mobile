@@ -1,0 +1,8 @@
+h1 {
+    @include font-size-calc(22px, 22px);
+    font-weight: 700;
+}
+
+h3 {
+    @include font-size-calc(18px, 18px);
+}
